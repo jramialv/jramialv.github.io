@@ -36,7 +36,7 @@ header img {
   margin: 10px 0px 10px 16px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   header {
     height: 80px;
   }
@@ -48,16 +48,16 @@ header img {
 }
 
 .nav__bar {
-  width: 320px;
+  width: 100%;
   height: 44px;
-  background-color: none;
+  background-color: transparent;
   padding-top: 44px;
   position: absolute;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .nav__bar {
-    width: 630px;
+    width: 100%;
     height: 80px;
     padding-top: 0;
     position: relative;
@@ -65,7 +65,7 @@ header img {
 }
 
 .nav__items {
-  width: 539px;
+  width: 100%;
   height: auto;
   max-height: 1px;
   overflow: hidden;
@@ -76,10 +76,11 @@ header img {
   transition: all 1s cubic-bezier(0.325, 1, 0.22, 1);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .nav__items {
     max-height: none;
-    text-align: center;
+    display: inline-block;
+    text-align: right;
   }
 }
 
@@ -88,7 +89,7 @@ header img {
   margin: 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .nav__item {
     display: inline-block;
   }
@@ -105,10 +106,11 @@ header img {
   transition: 0.5s ease;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .nav__item a {
     color: #060a24;
     display: inline-block;
+    text-align: left;
     height: 44px;
     line-height: 44px;
     padding: 0;
@@ -155,7 +157,7 @@ header img {
   outline: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .nav__icon {
     display: none;
     top: 16px;
@@ -230,51 +232,14 @@ input[type="checkbox"]:checked ~ label .nav__icon-line:nth-child(3) {
           transform: translateX(-5px) rotate(45deg) translateY(-8px);
 }
 
-.container-titulo {
+.container-titulo h2 {
   margin-top: 29px;
+  text-align: left;
   font-family: IBM Plex Sans, monospace;
   font-size: 36px;
   color: #060a24;
   letter-spacing: 0;
   line-height: 42px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 16px 85px 101px 26px 10px 82px;
-      grid-template-columns: 16px 85px 101px 26px 10px 82px;
-  -ms-grid-rows: 42px 42px;
-      grid-template-rows: 42px 42px;
-}
-
-.container-titulo .art1-hello {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.container-titulo .art1-world {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  text-decoration: line-through;
-}
-
-.container-titulo .art1-pale {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 5;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.container-titulo .art1-punto {
-  -ms-grid-column: 5;
-  grid-column: 5;
-  -ms-grid-row: 2;
-  grid-row: 2;
 }
 
 .article1 {
@@ -293,7 +258,7 @@ a.boton_1 {
   text-decoration: none;
   background: #00f3bb;
   font-family: IBM Plex Mono, monospace;
-  font-weight: Medium;
+  font-weight: 500;
   font-size: 16px;
   color: #060a24;
   letter-spacing: 0;
@@ -304,7 +269,7 @@ a.boton_1 {
 .boton_1:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
   font-family: IBM Plex Mono, monospace;
-  font-weight: Medium;
+  font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   letter-spacing: 0;
@@ -430,10 +395,10 @@ h2 {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  -ms-grid-columns: (320px)[1];
-      grid-template-columns: repeat(1, 320px);
-  -ms-grid-rows: (243px)[6];
-      grid-template-rows: repeat(6, 243px);
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  -ms-grid-rows: 243px 243px 243px 243px 243px 243px;
+      grid-template-rows: 243px 243px 243px 243px 243px 243px;
 }
 
 .container-img .grace img {
@@ -526,7 +491,7 @@ h2 {
   width: 288px;
   height: 32px;
   font-family: IBM Plex Sans, monospace;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 24px;
   color: #060a24;
   letter-spacing: 0;
@@ -557,7 +522,7 @@ h2 {
   width: 288px;
   height: 64px;
   font-family: IBM Plex Sans, monospace;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 24px;
   color: #060a24;
   letter-spacing: 0;
@@ -588,7 +553,7 @@ h2 {
   width: 288px;
   height: 32px;
   font-family: IBM Plex Sans, monospace;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 24px;
   color: #060a24;
   letter-spacing: 0;
@@ -619,7 +584,7 @@ h2 {
   width: 288px;
   height: 64px;
   font-family: IBM Plex Sans, monospace;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 24px;
   color: #060a24;
   letter-spacing: 0;
@@ -667,7 +632,7 @@ footer .container2 a.boton_2 {
   text-decoration: none;
   background: #00f3bb;
   font-family: "IBM Plex Mono", monospace;
-  font-weight: Medium;
+  font-weight: 500;
   font-size: 16px;
   color: #060a24;
   letter-spacing: 0;
@@ -678,7 +643,7 @@ footer .container2 a.boton_2 {
 footer .container2 .boton_2:hover {
   background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
   font-family: "IBM Plex Mono", monospace;
-  font-weight: Medium;
+  font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   letter-spacing: 0;
@@ -744,74 +709,8 @@ footer .redes ul li i {
     width: 100%;
     height: 3058px;
   }
-  .container-titulo {
+  .container-titulo h2 {
     margin-top: 120px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 200px 152px 179px 391px 18px;
-        grid-template-columns: 200px 152px 179px 391px 18px;
-    -ms-grid-rows: 84px;
-        grid-template-rows: 84px;
-  }
-  .container-titulo .art1-hello {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-family: IBM Plex Sans, monospace;
-    font-size: 64px;
-    color: #060a24;
-    letter-spacing: 0;
-  }
-  .container-titulo .art1-world {
-    -ms-grid-column: 3;
-    grid-column: 3;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    font-family: IBM Plex Sans, monospace;
-    font-size: 64px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 42px;
-    text-decoration: line-through;
-  }
-  .container-titulo .art1-pale {
-    -ms-grid-column: 4;
-    grid-column: 4;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    font-family: IBM Plex Sans, monospace;
-    font-size: 64px;
-    color: #060a24;
-    letter-spacing: 0;
-    line-height: 42px;
-  }
-  .container-titulo .art1-punto {
-    -ms-grid-column: 5;
-    grid-column: 5;
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-family: IBM Plex Sans, monospace;
-    font-size: 64px;
-    color: #0000ec;
-    letter-spacing: 0;
-    line-height: 42px;
   }
   .article1 {
     width: 628px;
@@ -900,7 +799,7 @@ footer .redes ul li i {
   .article2 h3 {
     position: absolute;
     border: none;
-    padding: none;
+    padding: 0%;
     float: right;
     margin: -646.1px 321px 0px 720px;
     width: 399px;
@@ -931,10 +830,10 @@ footer .redes ul li i {
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
-    -ms-grid-columns: (480px)[3];
-        grid-template-columns: repeat(3, 480px);
-    -ms-grid-rows: (364px)[2];
-        grid-template-rows: repeat(2, 364px);
+    -ms-grid-columns: 480px 480px 480px;
+        grid-template-columns: 480px 480px 480px;
+    -ms-grid-rows: 364px 364px;
+        grid-template-rows: 364px 364px;
   }
   .container-img .grace img {
     max-width: 100%;
@@ -984,8 +883,8 @@ footer .redes ul li i {
     border: none;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (260px)[4];
-        grid-template-columns: repeat(4, 260px);
+    -ms-grid-columns: 260px 260px 260px 260px;
+        grid-template-columns: 260px 260px 260px 260px;
     -ms-grid-rows: 118px 130px;
         grid-template-rows: 118px 130px;
   }
