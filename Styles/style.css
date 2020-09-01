@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@500;600&display=swap");
 *,
 *::after,
 *::before {
@@ -36,9 +37,10 @@ header img {
   margin: 10px 0px 10px 16px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   header {
     height: 80px;
+    width: 1440px;
   }
   header img {
     width: 36px;
@@ -55,7 +57,7 @@ header img {
   position: absolute;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .nav__bar {
     width: 100%;
     height: 80px;
@@ -76,7 +78,7 @@ header img {
   transition: all 1s cubic-bezier(0.325, 1, 0.22, 1);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .nav__items {
     max-height: none;
     display: inline-block;
@@ -89,7 +91,7 @@ header img {
   margin: 0;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .nav__item {
     display: inline-block;
   }
@@ -106,13 +108,12 @@ header img {
   transition: 0.5s ease;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .nav__item a {
     color: #060a24;
     display: inline-block;
     text-align: left;
-    height: 44px;
-    line-height: 44px;
+    height: auto;
     padding: 0;
     border: none;
     padding-right: 48px;
@@ -157,7 +158,7 @@ header img {
   outline: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .nav__icon {
     display: none;
     top: 16px;
@@ -715,7 +716,19 @@ footer .redes ul li i {
     height: 3058px;
   }
   .container-titulo h2 {
+    width: 100%;
+    height: 84px;
     margin-top: 120px;
+    font-family: IBM Plex Sans, monospace;
+    font-size: 64px;
+    color: #060A24;
+    letter-spacing: 0;
+  }
+  .container-titulo h2 .tachado {
+    text-decoration: line-through;
+  }
+  .container-titulo h2 .color {
+    color: #0000EC;
   }
   .article1 {
     width: 628px;
@@ -806,7 +819,7 @@ footer .redes ul li i {
     border: none;
     padding: 0%;
     float: right;
-    margin: -646.1px 321px 0px 720px;
+    margin: -690px 321px 0px 720px;
     width: 399px;
     height: 62px;
     text-align: left;
